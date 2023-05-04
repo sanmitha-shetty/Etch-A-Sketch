@@ -20,6 +20,19 @@ function createGrid(rows, cols){
 //Default Grid:
 createGrid(16,16);
 
+//Create a new Grid
+newGrid.addEventListener('click', ()=>{
+    let rows = prompt('Enter the number of rows or columns:');
+        if (rows == undefined){
+            containerDiv.innerHTML="";
+            createGrid(16,16);
+        }
+        else{
+            let cols = rows;
+            containerDiv.innerHTML="";
+            createGrid (rows, cols);
+        };
+    });
 
 //Add Hover Effect to the Grid
 function hoverGrid(){
