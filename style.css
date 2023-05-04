@@ -6,9 +6,11 @@
 .container{
     display:grid;
     margin: auto;
-    height: 900px;
-    width: 900px;
+    margin-top: 20px;
+    height: 400px;
+    width: 400px;
     border: solid black 3px;
+    background-color: #490b3d;
     grid-gap:1px;
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     grid-template-rows: repeat(var(--grid-rows), 1fr);
@@ -19,4 +21,28 @@
     padding: 0;
     margin:0;
     outline:1px solid #000;
-};
+}
+.button-list{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 0 15px;
+    padding: 7px;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: 400;
+    color: #490b3d;
+    background-color:#f9d1d7;
+    border: 3px solid #490b3d;
+    border-radius: 10px;
+    text-align: center;
+}
+p{
+    color: #490b3d;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: monospace;
+    text-align: center;
+    margin: 15px;
+}

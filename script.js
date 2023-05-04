@@ -1,7 +1,11 @@
 
 const containerDiv = document.querySelector(".container")
+const newGrid = document.querySelector(".new-grid");
+const clearGrid = document.querySelector(".clear-grid");
+const item = document.querySelectorAll('.new-div');
 
 console.log(containerDiv);
+
 //Create Grid
 function createGrid(rows, cols){
     containerDiv.style.setProperty('--grid-rows', rows);
@@ -11,16 +15,19 @@ function createGrid(rows, cols){
         cell.classList.add("new-div");
         containerDiv.appendChild(cell);
     };
+    hoverGrid();
 }; 
 //Default Grid:
 createGrid(16,16);
-const item = document.querySelectorAll('.new-div');
-  item.forEach((cell) => {
-    cell.addEventListener('mouseover', () => {
-      cell.style.background = 'black';
+
+
+//Add Hover Effect to the Grid
+function hoverGrid(){
+    const item = document.querySelectorAll('.new-div');
+    item.forEach((cell) => {
+        cell.addEventListener('mouseover', () => {
+        cell.style.background = '#f9d1d7';
+        });
     });
-  });
-
-
-
- /* let rows = prompt('How many Rows or Columns do you need?'); */
+};
+ 
