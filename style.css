@@ -2,13 +2,15 @@
     --grid-rows: 1;
     --grid-cols: 1;
 }
-
+body{
+    background-color: #f5ecfa;
+}
 .container{
     display:grid;
     margin: auto;
-    margin-top: 20px;
-    height: 400px;
-    width: 400px;
+    margin-top: 40px;
+    height: 500px;
+    width: 500px;
     border: solid black 3px;
     background-color: #490b3d;
     grid-gap:1px;
@@ -27,10 +29,10 @@
     justify-content: center;
 }
 button{
-    margin: 0 15px;
+    margin: 0 20px;
     padding: 7px;
     font-family: monospace;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     color: #490b3d;
     background-color:#f9d1d7;
@@ -40,9 +42,9 @@ button{
 }
 p{
     color: #490b3d;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     font-family: monospace;
     text-align: center;
-    margin: 15px;
+    margin: 16px;
 }
