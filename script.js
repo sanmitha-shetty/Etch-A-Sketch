@@ -27,6 +27,11 @@ newGrid.addEventListener('click', ()=>{
             containerDiv.innerHTML="";
             createGrid(16,16);
         }
+        else if (rows< 1 || rows>100){
+            containerDiv.innerHTML="";
+            alert('Please enter a number between 1 and 100')
+            createGrid(16,16); 
+        }
         else{
             let cols = rows;
             containerDiv.innerHTML="";
